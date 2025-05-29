@@ -1,0 +1,12 @@
+.app-download{
+    margin: auto;
+    margin-bottom: 100px;
+    font-size: max(3vw,20px);
+    text-align: center;
+}
+.app-downoad-platform{
+    display: flex;
+    justify-content: center;
+    gap: max(2vh,10px);
+    margin-top: 40px;
+}
