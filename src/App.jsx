@@ -6,6 +6,7 @@ import Home from './Pages/Home/Home';
 import Cart from './Pages/Cart/Cart';
 import Placeorder from './Pages/PlaceOrder/Placeorder';
 import LoginPopup from './component/Login/LoginPopup';
+import ViewMenu from './component/View menu/ViewMenu';
 
 const App = () => {
   const [showlogin, setShowlogin] = useState(false);
@@ -16,6 +17,7 @@ const App = () => {
       <div className='App'>
         <Navbar setShowlogin={setShowlogin} />
         <Routes>
+          <Route path='/viewMenu' element={<ViewMenu></ViewMenu>}  ></Route>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/placeorder" element={<Placeorder />} />
